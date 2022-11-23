@@ -19,12 +19,13 @@ class MyApp extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
           items: const [
             BottomNavigationBarItem(
-                label: 'Home',
-                icon: Icon(
-                  Icons.favorite,
-                )),
+              label: 'Home',
+              icon: Icon(Icons.favorite),
+            ),
             BottomNavigationBarItem(
-                label: 'Settings', icon: Icon(Icons.settings))
+              label: 'Settings',
+              icon: Icon(Icons.settings),
+            )
           ],
         ),
       ),
