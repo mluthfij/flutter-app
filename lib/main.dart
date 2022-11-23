@@ -13,6 +13,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String buttonName = 'Click';
+  int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -36,13 +37,19 @@ class _MyAppState extends State<MyApp> {
           items: const [
             BottomNavigationBarItem(
               label: 'Home',
-              icon: Icon(Icons.favorite),
+              icon: Icon(Icons.home),
             ),
             BottomNavigationBarItem(
               label: 'Settings',
               icon: Icon(Icons.settings),
             )
           ],
+          currentIndex: currentIndex,
+          onTap: (int index) {
+            setState(() {
+              currentIndex = index;
+            });
+          },
         ),
       ),
     );
