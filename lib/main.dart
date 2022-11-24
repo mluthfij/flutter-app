@@ -56,8 +56,7 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 )
-              : Image.network(
-                  'https://whatsnewindonesia.com/sites/default/files/inline-images/kanduraworkshop-1024x1024_1.jpeg'),
+              : Image.asset('images/pottery.jpg'),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
