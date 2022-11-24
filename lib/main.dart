@@ -56,7 +56,8 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 )
-              : const SizedBox(),
+              : Image.network(
+                  'https://whatsnewindonesia.com/sites/default/files/inline-images/kanduraworkshop-1024x1024_1.jpeg'),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
